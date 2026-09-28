@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f8fafc, #eef2ff);
+    color: #1e293b;
+}
+/*--------------------------------*/
+/*--|estilo_alumnos_registrados|--*/
+/*--------------------------------*/
+.contenedor_alumnos {
+    width: 100%;
+    max-width: 1050px;
+    margin: auto;
+}
+.encabezado_alumnos {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+.icono_alumnos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    background: #e0e7ff;
+    color: #4f46e5;
+    font-size: 27px;
+}
+.encabezado_alumnos h1 {
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+.encabezado_alumnos p {
+    color: #64748b;
+    font-size: 14px;
+}
+/*----------------------------*/
+/*--|estilo_resumen_alumnos|--*/
+/*----------------------------*/
+.resumen_alumnos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.tarjeta_resumen {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 17px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background: #ffffff;
+}
+.tarjeta_resumen > i {
+    color: #4f46e5;
+    font-size: 25px;
+}
+.tarjeta_resumen span {
+    display: block;
+    margin-bottom: 4px;
+    color: #64748b;
+    font-size: 12px;
+}
+.tarjeta_resumen strong {
+    font-size: 19px;
+}
+/*----------------------------------*/
+/*--|estilo_formulario_de_alumnos|--*/
+/*----------------------------------*/
+.seccion_formulario {
+    margin-bottom: 18px;
+    padding: 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 13px;
+    background: #ffffff;
+}
+.seccion_formulario h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+#formulario_alumnos {
+    display: grid;
+    grid-template-columns: 2fr 1fr auto;
+    align-items: end;
+    gap: 12px;
+}
+.campo_alumno {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.campo_alumno label {
+    color: #475569;
+    font-size: 12px;
+    font-weight: bold;
+}
+.campo_alumno input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+}
+.campo_alumno input:focus {
+    border-color: #4f46e5;
+}
+.boton_registrar {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: #ffffff;
+    cursor: pointer;
+}
+.boton_registrar:hover {
+    background: #4338ca;
+}
+/*------------------------------*/
+/*--|estilo_barra_de_buscador|--*/
+/*------------------------------*/
+.herramientas_alumnos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+.buscador_alumnos {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 8px;
+    padding: 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+    background: #ffffff;
+}
+.buscador_alumnos i {
+    color: #64748b;
+}
+.buscador_alumnos input {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+.boton_limpiar {
+    padding: 10px 13px;
+    border: none;
+    border-radius: 8px;
+    background: #ef4444;
+    color: #ffffff;
+    cursor: pointer;
+}
+.boton_limpiar:hover {
+    background: #dc2626;
+}
+/*-----------------------------*/
+/*--|estilo_lista_de_alumnos|--*/
+/*-----------------------------*/
+.seccion_lista {
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    border-radius: 13px;
+    background: #ffffff;
+}
+.titulo_lista {
+    padding: 18px;
+    border-bottom: 1px solid #e2e8f0;
+}
+.titulo_lista h2 {
+    margin-bottom: 4px;
+    font-size: 19px;
+}
+.titulo_lista p {
+    color: #64748b;
+    font-size: 12px;
+}
+.lista_alumnos {
+    display: grid;
+    gap: 10px;
+    padding: 15px;
+}
+.tarjeta_alumno {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    background: #f8fafc;
+}
+.avatar_alumno {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: #e0e7ff;
+    color: #4f46e5;
+    font-weight: bold;
+}
+.informacion_alumno {
+    flex: 1;
+}
+.informacion_alumno h3 {
+    margin-bottom: 3px;
+    font-size: 15px;
+}
+.informacion_alumno span {
+    color: #64748b;
+    font-size: 12px;
+}
+.acciones_alumno {
+    display: flex;
+    gap: 7px;
+}
+.boton_destacado, .boton_eliminar {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.boton_destacado {
+    background: #fef3c7;
+    color: #d97706;
+}
+.boton_destacado.activo {
+    background: #f59e0b;
+    color: #ffffff;
+}
+.boton_eliminar {
+    background: #fee2e2;
+    color: #dc2626;
+}
+.mensaje_lista {
+    padding: 35px;
+    color: #94a3b8;
+    text-align: center;
+}
+.mensaje_lista i {
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+.mensaje_lista p {
+    font-size: 13px;
+}

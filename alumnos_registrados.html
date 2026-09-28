@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alumnos registrados</title>
+    <link rel="stylesheet" href="alumnos_registrados.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="alumnos_registrados.js" defer></script>
+</head>
+<body>
+    <!---------------------------------------->
+    <!--|estructuracion_alumnos_registrados|-->
+    <!---------------------------------------->
+    <main class="contenedor_alumnos">
+        <header class="encabezado_alumnos">
+            <div class="icono_alumnos">
+                <i class="fa-solid fa-user-graduate"></i>
+            </div>
+            <div>
+                <h1>Alumnos Registrados</h1>
+                <p>Administra la lista de estudiantes.</p>
+            </div>
+        </header>
+        <!--------------------->
+        <!--|resumen_alumnos|-->
+        <!--------------------->
+        <section class="resumen_alumnos">
+            <div class="tarjeta_resumen">
+                <i class="fa-solid fa-users"></i>
+                <div>
+                    <span>Alumnos</span>
+                    <strong id="total_alumnos">0</strong>
+                </div>
+            </div>
+            <div class="tarjeta_resumen">
+                <i class="fa-solid fa-star"></i>
+                <div>
+                    <span>Destacados</span>
+                    <strong id="total_destacados">0</strong>
+                </div>
+            </div>
+            <div class="tarjeta_resumen">
+                <i class="fa-solid fa-school"></i>
+                <div>
+                    <span>Estado</span>
+                    <strong id="estado_lista">Vacía</strong>
+                </div>
+            </div>
+        </section>
+        <!--------------------------->
+        <!--|formulario_de_alumnos|-->
+        <!--------------------------->
+        <section class="seccion_formulario">
+            <h2>Registrar alumno</h2>
+            <form id="formulario_alumnos">
+                <div class="campo_alumno">
+                    <label for="nombre_alumno">Nombre completo</label>
+                    <input type="text" id="nombre_alumno" placeholder="Ejemplo: Ana López" required>
+                </div>
+                <div class="campo_alumno">
+                    <label for="curso_alumno">Curso</label>
+                    <input type="text" id="curso_alumno" placeholder="Ejemplo: 5° A" required>
+                </div>
+                <button class="boton_registrar" type="submit"><i class="fa-solid fa-user-plus"></i>Registrar</button>
+            </form>
+        </section>
+        <!----------------------->
+        <!--|barra_de_buscador|-->
+        <!----------------------->
+        <section class="herramientas_alumnos">
+            <div class="buscador_alumnos">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="buscar_alumno" placeholder="Buscar alumno...">
+            </div>
+            <button id="limpiar_lista" class="boton_limpiar" type="button"><i class="fa-solid fa-trash"></i>Limpiar lista</button>
+        </section>
+        <!---------------------->
+        <!--|lista_de_alumnos|-->
+        <!---------------------->
+        <section class="seccion_lista">
+            <div class="titulo_lista">
+                <div>
+                    <h2>Lista de estudiantes</h2>
+                    <p>Alumnos registrados actualmente</p>
+                </div>
+            </div>
+            <div id="lista_alumnos" class="lista_alumnos"></div>
+            <div id="mensaje_lista" class="mensaje_lista">
+                <i class="fa-solid fa-user-slash"></i>
+                <p>No hay alumnos registrados.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
